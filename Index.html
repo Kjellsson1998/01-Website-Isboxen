@@ -16,13 +16,15 @@
                 <div class="sm:p-0">
                    
                     <div class="flex min-h-[560px] flex-col gap-6 bg-cover bg-center bg-no-repeat sm:gap-8 items-center justify-center p-6 sm:rounded-none"
-                        style='background-image: linear-gradient(rgba(20, 9, 0, 0.4), rgba(20, 9, 0, 0.7)), url("Image/KlassiskGlassbåt.jpg");'>
+                        style='background-image: linear-gradient(rgba(20, 9, 0, 0.4), rgba(20, 9, 0, 0.7));'>
                       
                         <div class="flex flex-col gap-3 text-center">
-                            <h1
-                                class="text-[var(--color-isboxen-mint-cream-900)] text-5xl font-black leading-tight tracking-[-0.033em] sm:text-6xl sm:font-black sm:leading-tight sm:tracking-[-0.033em]">
-                                Isboxen
-                            </h1>
+                            <img 
+                                src="Image/Logg-ISBOXEN.PNG" 
+                                alt="Isboxen Logo" 
+                                class="mx-auto h-full w-auto max-h-80"
+                            />
+                            
                             <h2
                                 class="text-[var(--color-isboxen-mint-cream-700)] text-lg font-medium leading-normal sm:text-xl sm:font-medium sm:leading-normal">
                                 Ta & Gå Glass! Dina favoritgodbitar, redo när du är.
@@ -41,8 +43,9 @@
                     Fungerar Det</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
                     <div
-                        class="flex flex-col items-center gap-3 rounded-xl bg-[var(--color-isboxen-mint-cream)] p-6 shadow-md">
-                        <div class="text-[var(--color-isboxen-blush)]"> 
+                        class="flex flex-col items-center gap-3 rounded-xl p-6 shadow-md"
+                        style="background: linear-gradient(135deg, var(--color-isboxen-blush-900) , var(--color-isboxen-blush-700) );">
+                        <div class="text-[var(--color-isboxen-blush-400)] "> 
                             <svg fill="currentColor" height="40px" viewBox="0 0 256 256" width="40px"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -50,14 +53,15 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="text-[var(--color-isboxen-smoky-black-500)] text-xl font-semibold leading-tight">Välj
-                            Din Smak</h3>
-                        <p class="text-[var(--color-isboxen-smoky-black-400)] text-sm">Välj din favorit från vårt läckra
-                            urval.</p>
+                        <h3 class="text-isboxen-black text-xl font-semibold leading-tight bg-gradient-to-r from-[var(--color-isboxen-smoky-black-300)] to-[var(--color-isboxen-smoky-black-500)] bg-clip-text text-transparent">
+                            Välj Din Smak
+                        </h3>
+                        <p class="text-[var(--color-isboxen-smoky-black-400)] text-sm">Välj din favorit från vårt läckra urval.</p>
                     </div>
                     <div
-                        class="flex flex-col items-center gap-3 rounded-xl bg-[var(--color-isboxen-mint-cream)] p-6 shadow-md">
-                        <div class="text-[var(--color-isboxen-sandy-brown)]">
+                        class="flex flex-col items-center gap-3 rounded-xl bg-[var(--color-isboxen-mint-cream)] p-6 shadow-md"
+                        style="background: linear-gradient(135deg, var(--color-isboxen-sandy-brown-900) , var(--color-isboxen-sandy-brown-700) );">
+                        <div class="text-[var(--color-isboxen-sandy-brown-400)]">
                             <svg fill="currentColor" height="40px" viewBox="0 0 256 256" width="40px"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -71,8 +75,10 @@
                             betalning via SWISH eller PAYPAL.</p>
                     </div>
                     <div
-                        class="flex flex-col items-center gap-3 rounded-xl bg-[var(--color-isboxen-mint-cream)] p-6 shadow-md">
-                        <div class="text-[var(--color-isboxen-celadon)]">
+                        class="flex flex-col items-center gap-3 rounded-xl bg-[var(--color-isboxen-mint-cream)] p-6 shadow-md"
+                        style="background: linear-gradient(135deg, var(--color-isboxen-celadon-900) , var(--color-isboxen-celadon-700)
+                        );">
+                        <div class="text-[var(--color-isboxen-celadon-300)]">
                             <svg fill="currentColor" height="40px" viewBox="0 0 256 256" width="40px"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -90,98 +96,84 @@
             <div class="py-10 px-6 bg-[var(--color-isboxen-mint-cream)]">
                 <h2
                     class="text-[var(--color-isboxen-smoky-black)] text-3xl font-bold leading-tight tracking-[-0.015em] mb-6 text-center">
-                    Utvalda
-                    Smaker från Sia Glass & Sun Lolly</h2>
+                    Utvalda Smaker från Sia Glass</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-                    <div class="relative rounded-xl shadow-md overflow-hidden bg-[var(--color-isboxen-mint-cream-600)]">
-                        
-                        <div class="absolute inset-0 z-0 bg-center bg-no-repeat bg-cover filter blur-lg scale-110"
-                            style='background-image: url("Image/KlassiskGlassbåt.jpg");'>
+                    <div class="relative rounded-xl shadow-md overflow-hidden bg-[var(--color-isboxen-mint-cream-600)] max-w-xs mx-auto">
+                        <!-- Bakgrundsbild (suddig) -->
+                        <div class="absolute inset-0 z-0 bg-center bg-no-repeat bg-cover filter blur-3xl scale-110"
+                            style='background-image: url("Image/Klassisk-glassbat.png");'>
                         </div>
-                        <div class="relative z-10 flex flex-col gap-4 p-4">
-                            <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-lg flex flex-col"
-                                style='background-image: url("Image/KlassiskGlassbåt.jpg");'>
+                    
+                        <!-- Innehåll -->
+                        <div class="relative z-10 flex flex-col gap-2 p-3"> 
+                            <!-- Produktbild -->
+                            <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-full shadow-lg"
+                                style='background-image: url("Image/Klassisk-glassbat.png");'>
                             </div>
+                    
+                            <!-- Huvudinformation -->
                             <div>
-                                <p
-                                    class="text-[var(--color-isboxen-smoky-black-500)] text-xl font-semibold leading-normal">
-                                    Jordgubbsvirvel</p>
-                                <p
-                                    class="text-[var(--color-isboxen-smoky-black-400)] text-sm font-normal leading-normal mt-1">
-                                    En uppfriskande
-                                    jordgubbsvirvel med äkta fruktbitar.</p>
+                                <h2 class="text-[var(--color-isboxen-smoky-black-500)] text-xl font-bold leading-tight"> 
+                                    Glassbåt - Originalet
+                                </h2>
+                                <p class="text-[var(--color-isboxen-smoky-black-400)] text-xs leading-normal mt-0.5"> 
+                                    Krämig vaniljglass på svensk grädde, jordgubbssylt & chokladöverdrag i båtrån. Klassiker sedan 1961.
+                                </p>
                             </div>
+                    
+                            <!-- Snabbfakta / Näring per glass -->
+                            <div class="mt-1 p-2 bg-white/70 backdrop-blur-sm rounded-md shadow">    
+                                <p class="text-xs text-[var(--color-isboxen-smoky-black-400)] mt-1"> 
+                                    Allergener: Gluten, Laktos, Mjölk, Soja.
+                                </p>
+                            </div>
+                    
+
+                    
+
+                        </div>             
+                    
+                    </div>
+
+                    <div class="relative rounded-xl shadow-md overflow-hidden bg-[var(--color-isboxen-mint-cream-600)] max-w-xs mx-auto">
+                        <!-- Bakgrundsbild (suddig) -->
+                        <div class="absolute inset-0 z-0 bg-center bg-no-repeat bg-cover filter blur-3xl scale-110"
+                            style='background-image: url("Image/arets-sommarglassbat-2025.png");'>
+                        </div>
+                    
+                        <!-- Innehåll -->
+                        <div class="relative z-10 flex flex-col gap-2 p-3"> 
+                            <!-- Produktbild -->
+                            <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-full shadow-lg" style='background-image: url("Image/arets-sommarglassbat-2025.png");'>
+                            </div>
+                    
+                            <!-- Huvudinformation -->
+                            <div>
+                                <h2 class="text-[var(--color-isboxen-smoky-black-500)] text-xl font-bold leading-tight"> 
+                                    Årets SommarGlassbåt
+                                </h2>
+                                <p class="text-[var(--color-isboxen-smoky-black-400)] text-xs leading-normal mt-0.5"> 
+                                    Krämig citronglass på svensk grädde, jordgubb/fläderrippel & citron/limedopp. En frisk sommarbris!
+                                </p>
+                            </div>
+                    
+                            <!-- Snabbfakta / Allergener -->
+                            <div class="mt-1 p-2 bg-white/70 backdrop-blur-sm rounded-md shadow"> 
+                                <p class="text-xs text-[var(--color-isboxen-smoky-black-400)] mt-1"> 
+                                    Allergener: Gluten, Laktos, Mjölk, Soja. 
+                                </p>              </div>
                         </div>
                     </div>
 
-                    <div class="relative rounded-xl shadow-md overflow-hidden bg-[var(--color-isboxen-mint-cream-600)]">
-                        <div class="absolute inset-0 z-0 bg-center bg-no-repeat bg-cover filter blur-lg scale-110"
-                            style='background-image: url("Image/KlassiskGlassbåt.jpg");'>
-                        </div>
-                        <div class="relative z-10 flex flex-col gap-4 p-4">
-                            <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-lg flex flex-col"
-                                style='background-image: url("Image/KlassiskGlassbåt.jpg");'>
-                            </div>
-                            <div>
-                                <p
-                                    class="text-[var(--color-isboxen-smoky-black-500)] text-xl font-semibold leading-normal">
-                                    Chokladfudge</p>
-                                <p
-                                    class="text-[var(--color-isboxen-smoky-black-400)] text-sm font-normal leading-normal mt-1">
-                                    Rik chokladfudge med en
-                                    krämig konsistens.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="relative rounded-xl shadow-md overflow-hidden bg-[var(--color-isboxen-mint-cream-600)]">
-                        <div class="absolute inset-0 z-0 bg-center bg-no-repeat bg-cover filter blur-lg scale-110"
-                            style='background-image: url("Image/KlassiskGlassbåt.jpg");'>
-                        </div>
-                        <div class="relative z-10 flex flex-col gap-4 p-4">
-                            <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-lg flex flex-col"
-                                style='background-image: url("Image/KlassiskGlassbåt.jpg");'>
-                            </div>
-                            <div>
-                                <p
-                                    class="text-[var(--color-isboxen-smoky-black-500)] text-xl font-semibold leading-normal">
-                                    Klassisk Vanilj</p>
-                                <p
-                                    class="text-[var(--color-isboxen-smoky-black-400)] text-sm font-normal leading-normal mt-1">
-                                    Den tidlösa klassikern,
-                                    len och krämig vanilj.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="relative rounded-xl shadow-md overflow-hidden bg-[var(--color-isboxen-mint-cream-600)]">
-                        <div class="absolute inset-0 z-0 bg-center bg-no-repeat bg-cover filter blur-lg scale-110"
-                            style='background-image: url("Image/KlassiskGlassbåt.jpg");'>
-                        </div>
-                        <div class="relative z-10 flex flex-col gap-4 p-4">
-                            <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-lg flex flex-col"
-                                style='background-image: url("Image/KlassiskGlassbåt.jpg");'>
-                            </div>
-                            <div>
-                                <p
-                                    class="text-[var(--color-isboxen-smoky-black-500)] text-xl font-semibold leading-normal">
-                                    Mintchokladkross</p>
-                                <p
-                                    class="text-[var(--color-isboxen-smoky-black-400)] text-sm font-normal leading-normal mt-1">
-                                    Sval mint med bitar av
-                                    chokladkross.</p>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
 
             <div class="px-6 py-10 bg-[var(--color-isboxen-mint-cream)]">
                 <h2
                     class="text-[var(--color-isboxen-smoky-black)] text-3xl font-bold leading-tight tracking-[-0.015em] mb-6 text-center">
-                    Hitta
-                    Oss Här</h2>
+                    Hitta hit</h2>
 
                 <iframe class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl object-cover shadow-lg"
                     src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d643.0512832386984!2d18.963426100591736!3d63.21977374269231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d63.21979761546151!2d18.963889343185443!5e1!3m2!1ssv!2sse!4v1750757751655!5m2!1ssv!2sse"
@@ -196,29 +188,47 @@
                 </div>
             </div>
 
-            <footer
-                class="flex flex-col gap-4 px-5 py-10 text-center bg-[var(--color-isboxen-smoky-black)] text-[var(--color-isboxen-celadon-800)]">
-                
-                <h2
-                    class="text-[var(--color-isboxen-mint-cream-900)] text-2xl font-bold leading-tight tracking-[-0.015em] mb-2">
-                    Kontakt & Önskemål</h2>
-                <div class="text-[var(--color-isboxen-celadon-800)] text-base max-w-2xl mx-auto">
-                    <p class="mb-3">Har du frågor, önskemål om glassmaker du vill se i Isboxen, eller representerar du
-                        ett företag som är intresserat av att ha era produkter hos oss?</p>
-                    <p class="mb-1 text-[var(--color-isboxen-mint-cream-800)] font-semibold">Kontakta mig Hugo Kjellsson:
-                    </p>
-                    <p class="mb-1">E-post: <a href="mailto:hugo@kjellsson.nu"
-                            class="text-[var(--color-isboxen-sandy-brown)] hover:text-[var(--color-isboxen-sandy-brown-600)] hover:underline">hugo@kjellsson.nu</a>
-                    </p>
-                    <p class="mb-4">Telefon: <a href="tel:0703909051"
-                            class="text-[var(--color-isboxen-sandy-brown)] hover:text-[var(--color-isboxen-sandy-brown-600)] hover:underline">070-3909051</a>
-                    </p>
-                    <p>Vi strävar efter att ha ett sortiment som våra kunder älskar och uppskattar din feedback!</p>
-                </div>
-                <p class="text-[var(--color-isboxen-celadon-700)] text-sm font-normal leading-normal mt-6">© 2024
-                    Isboxen. Alla rättigheter
-                    förbehållna.</p>
-            </footer>
+            <footer class="bg-[var(--color-isboxen-smoky-black)] text-[var(--color-isboxen-celadon-800)]">
+                <div class="container mx-auto px-5 py-10">
+            
+             
+                    <div
+                        class="flex flex-col justify-between items-center  text-center  gap-8 mb-8 max-w-3xl mx-auto">
+            
+                        
+                        <div class="flex flex-col items-center ">
+                            <!-- Logotyp -->
+                            <div class="mb-2"> 
+                                <img src="Image/Logg-ISBOXEN.PNG" alt="Isboxen Logo" class="h-12 w-auto" />
+                            </div>
+                            <!-- Tagline -->
+                            <p class="text-sm text-[var(--color-isboxen-celadon-700)] max-w-xs"> 
+                                Frågor, önskemål eller företagssamarbeten? Vi lyssnar gärna!
+                            </p>
+                        </div>
+            
+                        
+                        <div class="flex flex-col items-center  gap-1">
+                            <p class="text-sm text-[var(--color-isboxen-mint-cream-800)] font-semibold">Kontakta Hugo Kjellsson:</p>
+                            <a href="mailto:hugo@kjellsson.nu"
+                                class="text-sm text-[var(--color-isboxen-sandy-brown)] hover:text-[var(--color-isboxen-sandy-brown-600)] hover:underline">
+                                hugo@kjellsson.nu
+                            </a>
+                            <a href="tel:0703909051"
+                                class="text-sm text-[var(--color-isboxen-sandy-brown)] hover:text-[var(--color-isboxen-sandy-brown-600)] hover:underline">
+                                070-390 90 51
+                            </a>
+                        </div>
+                    </div>
+            
+                    <!-- Avdelare och Copyright -->
+                    <div class="border-t border-[var(--color-isboxen-celadon-900)] opacity-50 pt-6 text-center">
+                        <p class="text-[var(--color-isboxen-celadon-700)] text-xs font-normal leading-normal">
+                            © 2025 Isboxen. Alla rättigheter förbehållna.
+                        </p>
+                    </div>
+            
+                </div>   </footer>
         </div>
     </div>
 </body>
