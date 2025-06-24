@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+    /* --- Your existing custom colors (YellowC, GreenC, etc.) would be here --- */
+    /* --- Add the Isboxen palette below --- */
+
+    /* Isboxen Smoky Black */
+    /* Note: shades 600-900 are orange/brownish as per your original data */
+    --color-isboxen-smoky-black-100: #040200;
+    --color-isboxen-smoky-black-200: #080400;
+    --color-isboxen-smoky-black-300: #0c0600;
+    --color-isboxen-smoky-black-400: #100700;
+    --color-isboxen-smoky-black-500: #140900;
+    /* This is the 'DEFAULT' */
+    --color-isboxen-smoky-black-600: #763500;
+    --color-isboxen-smoky-black-700: #d86100;
+    --color-isboxen-smoky-black-800: #ff933b;
+    --color-isboxen-smoky-black-900: #ffc99d;
+    --color-isboxen-smoky-black: var(--color-isboxen-smoky-black-500);
+    /* Alias for default */
+
+    /* Isboxen Blush */
+    --color-isboxen-blush-100: #33091a;
+    --color-isboxen-blush-200: #661334;
+    --color-isboxen-blush-300: #991c4e;
+    --color-isboxen-blush-400: #cb2568;
+    --color-isboxen-blush-500: #de4d86;
+    /* This is the 'DEFAULT' */
+    --color-isboxen-blush-600: #e572a0;
+    --color-isboxen-blush-700: #ec95b8;
+    --color-isboxen-blush-800: #f2b8cf;
+    --color-isboxen-blush-900: #f9dce7;
+    --color-isboxen-blush: var(--color-isboxen-blush-500);
+    /* Alias for default */
+
+    /* Isboxen Sandy Brown */
+    --color-isboxen-sandy-brown-100: #411e01;
+    --color-isboxen-sandy-brown-200: #833c02;
+    --color-isboxen-sandy-brown-300: #c45a03;
+    --color-isboxen-sandy-brown-400: #fb790e;
+    --color-isboxen-sandy-brown-500: #fc9e4f;
+    /* This is the 'DEFAULT' */
+    --color-isboxen-sandy-brown-600: #fdb172;
+    --color-isboxen-sandy-brown-700: #fdc496;
+    --color-isboxen-sandy-brown-800: #fed8b9;
+    --color-isboxen-sandy-brown-900: #feebdc;
+    --color-isboxen-sandy-brown: var(--color-isboxen-sandy-brown-500);
+    /* Alias for default */
+
+    /* Isboxen Celadon */
+    --color-isboxen-celadon-100: #0f3d1d;
+    --color-isboxen-celadon-200: #1d7a39;
+    --color-isboxen-celadon-300: #2cb656;
+    --color-isboxen-celadon-400: #57d67e;
+    --color-isboxen-celadon-500: #93e5ab;
+    /* This is the 'DEFAULT' */
+    --color-isboxen-celadon-600: #aaeabd;
+    --color-isboxen-celadon-700: #bfefce;
+    --color-isboxen-celadon-800: #d4f5de;
+    --color-isboxen-celadon-900: #eafaef;
+    --color-isboxen-celadon: var(--color-isboxen-celadon-500);
+    /* Alias for default */
+
+    /* Isboxen Mint Cream */
+    /* Note: shades 100-400 are green as per your original data */
+    --color-isboxen-mint-cream-100: #144e22;
+    --color-isboxen-mint-cream-200: #279d45;
+    --color-isboxen-mint-cream-300: #52d472;
+    --color-isboxen-mint-cream-400: #a0e7b2;
+    --color-isboxen-mint-cream-500: #effbf2;
+    /* This is the 'DEFAULT' (very light) */
+    --color-isboxen-mint-cream-600: #f2fcf4;
+    --color-isboxen-mint-cream-700: #f5fdf7;
+    --color-isboxen-mint-cream-800: #f8fdfa;
+    --color-isboxen-mint-cream-900: #fcfefc;
+    --color-isboxen-mint-cream: var(--color-isboxen-mint-cream-500);
+    /* Alias for default */
+
+    /* Standard White and Black for text (as requested) */
+        /* You can use these if smoky-black and mint-cream don't quite fit for pure black/white text */
+        --color-isboxen-white: #EFFBF2;
+        --color-isboxen-black: #140900;
+    }
