@@ -1,2 +1,14 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: 'Wedges';
+    src: url('/Fonts/Wedges.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap; }
+
+        .font-subheading {
+            font-family: 'Wedges', sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;     }
