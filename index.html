@@ -1,226 +1,291 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="src/output.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
     <title>Isboxen</title>
-</head>
+  </head>
 
-<body class="bg-slate-50">
+  <body class="bg-slate-50">
     <div
-        class="relative flex w-full h-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden font-sans">
+      class="relative flex w-full h-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden font-sans"
+    >
+      <div>
         <div>
-            <div>
-                <div class="sm:p-0">
+          <div class="sm:p-0">
+            <div
+              class="flex min-h-[560px] flex-col gap-6 bg-cover bg-center bg-no-repeat sm:gap-8 items-center justify-center p-6 sm:rounded-none bg-gradient-to-b from-yellow-50 to-yellow-100"
+            >
+              <div class="flex flex-col gap-3 text-center">
+                <img
+                  src="Image/Loggo-ISBOXEN_optimized_.webp"
+                  alt="Isboxen Logo"
+                  class="mx-auto w-auto max-h-80"
+                />
 
-                    <div
-                        class="flex min-h-[560px] flex-col gap-6 bg-cover bg-center bg-no-repeat sm:gap-8 items-center justify-center p-6 sm:rounded-none bg-gradient-to-b from-yellow-50 to-yellow-100">
-                        <div class="flex flex-col gap-3 text-center">
-                            <img src="Image/Loggo-ISBOXEN_optimized_.webp" alt="Isboxen Logo"
-                                class="mx-auto w-auto max-h-80 " />
-
-                            <h2
-                                class="text-blue-800 text-lg font-subheading leading-normal sm:text-xl sm:font-medium sm:leading-normal">
-                                Ta & Gå Glass!
-                            </h2>
-                        </div>
-                        <button
-                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 sm:h-14 sm:px-8 bg-rose-500 text-white text-base font-subheading leading-normal tracking-[0.015em] sm:text-lg sm:font-bold sm:leading-normal sm:tracking-[0.015em] shadow-lg hover:bg-rose-400 transition-colors duration-300">
-                            <span class="truncate">Hitta Oss</span> </button>
-                    </div>
-                </div>
+                <h2
+                  class="text-blue-800 text-lg font-subheading leading-normal sm:text-xl sm:font-medium sm:leading-normal"
+                >
+                  Ta & Gå Glass!
+                </h2>
+              </div>
+              <button
+                onclick="document.getElementById('map-section').scrollIntoView({ behavior: 'smooth' });"
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 sm:h-14 sm:px-8 bg-rose-500 text-white text-base font-subheading leading-normal tracking-[0.015em] sm:text-lg sm:font-bold sm:leading-normal sm:tracking-[0.015em] shadow-lg hover:bg-rose-400 transition-colors duration-300"
+              >
+                <span class="truncate">Hitta Oss</span>
+              </button>
             </div>
-            <div class="bg-green-50 py-10 px-6">
-                <h2 class="text-neutral-800 text-3xl font-subheading leading-tight tracking-[-0.015em] mb-8 text-center">
-                    Så
-                    Fungerar Det</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-                    <div
-                        class="flex flex-col items-center gap-3 rounded-xl p-6 shadow-md bg-gradient-to-br from-rose-100 to-rose-300">
-                        <div class="text-rose-600">
-                            <svg fill="currentColor" height="40px" viewBox="0 0 256 256" width="40px"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M208,89.37V88A80,80,0,0,0,48,88v1.37A24,24,0,0,0,56,136h3.36l61.69,108a8,8,0,0,0,13.9,0l61.69-108H200a24,24,0,0,0,8-46.63ZM128,223.88,77.79,136H97.07l40.57,71ZM134.79,136l21.71,38-9.64,16.88L115.5,136Zm30.92,21.88L153.21,136h25ZM200,120H56a8,8,0,0,1,0-16,8,8,0,0,0,8-8V88a64,64,0,0,1,128,0v8a8,8,0,0,0,8,8,8,8,0,0,1,0,16Z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h3
-                            class="text-xl font-semibold leading-tight bg-gradient-to-r from-neutral-600 to-neutral-700 bg-clip-text text-transparent">
-                            Välj Din Smak
-                        </h3>
-                        <p class="text-neutral-500 text-sm">Välj din favorit från vårt läckra urval.</p>
-                    </div>
-                    <div
-                        class="flex flex-col items-center gap-3 rounded-xl p-6 shadow-md bg-gradient-to-br from-amber-100 to-amber-300">
-                        <div class="text-amber-600">
-                            <svg fill="currentColor" height="40px" viewBox="0 0 256 256" width="40px"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M224,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM32,64H224V80H32ZM224,192H32V160H224v32Zm0-48H32V112H224v32Z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h3 class="text-neutral-700 text-xl font-semibold leading-tight">
-                            Enkel Betalning</h3>
-                        <p class="text-neutral-500 text-sm">Snabb och säker kontaktlös
-                            betalning via SWISH eller PAYPAL.</p>
-                    </div>
-                    <div
-                        class="flex flex-col items-center gap-3 rounded-xl p-6 shadow-md bg-gradient-to-br from-green-100 to-green-300">
-                        <div class="text-green-600">
-                            <svg fill="currentColor" height="40px" viewBox="0 0 256 256" width="40px"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h3 class="text-neutral-700 text-xl font-semibold leading-tight">Ta &
-                            Njut!</h3>
-                        <p class="text-neutral-500 text-sm">Ta din glass och njut av stunden.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="py-10 px-6 bg-slate-50">
-                <h2 class="text-neutral-800 text-3xl font-bold leading-tight tracking-[-0.015em] mb-6 text-center">
-                    Utvalda Smaker från Sia Glass</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-
-                    <div class="relative rounded-xl shadow-md overflow-hidden bg-slate-200 max-w-xs mx-auto">
-                        <!-- Bakgrundsbild (suddig) -->
-                        <div class="absolute inset-0 z-0 bg-center bg-no-repeat bg-cover filter blur-3xl scale-110"
-                            style='background-image: url("Image/Klassisk-glassbat.png");'>
-                        </div>
-
-                        <!-- Innehåll -->
-                        <div class="relative z-10 flex flex-col gap-2 p-3">
-                            <!-- Produktbild -->
-                            <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-full shadow-lg"
-                                style='background-image: url("Image/Klassisk-glassbat.png");'>
-                            </div>
-
-                            <!-- Huvudinformation -->
-                            <div>
-                                <h2 class="text-neutral-700 text-xl font-bold leading-tight">
-                                    Glassbåt - Originalet
-                                </h2>
-                                <p class="text-neutral-500 text-xs leading-normal mt-0.5">
-                                    Krämig vaniljglass på svensk grädde, jordgubbssylt & chokladöverdrag i båtrån.
-                                    Klassiker sedan 1961.
-                                </p>
-                            </div>
-
-                            <!-- Snabbfakta / Näring per glass -->
-                            <div class="mt-1 p-2 bg-white/70 backdrop-blur-sm rounded-md shadow">
-                                <p class="text-xs text-neutral-500 mt-1">
-                                    Allergener: Gluten, Laktos, Mjölk, Soja.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="relative rounded-xl shadow-md overflow-hidden bg-slate-200 max-w-xs mx-auto">
-                        <!-- Bakgrundsbild (suddig) -->
-                        <div class="absolute inset-0 z-0 bg-center bg-no-repeat bg-cover filter blur-3xl scale-110"
-                            style='background-image: url("Image/arets-sommarglassbat-2025.png");'>
-                        </div>
-
-                        <!-- Innehåll -->
-                        <div class="relative z-10 flex flex-col gap-2 p-3">
-                            <!-- Produktbild -->
-                            <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-full shadow-lg"
-                                style='background-image: url("Image/arets-sommarglassbat-2025.png");'>
-                            </div>
-
-                            <!-- Huvudinformation -->
-                            <div>
-                                <h2 class="text-neutral-700 text-xl font-bold leading-tight">
-                                    Årets SommarGlassbåt
-                                </h2>
-                                <p class="text-neutral-500 text-xs leading-normal mt-0.5">
-                                    Krämig citronglass på svensk grädde, jordgubb/fläderrippel & citron/limedopp. En
-                                    frisk sommarbris!
-                                </p>
-                            </div>
-
-                            <!-- Snabbfakta / Allergener -->
-                            <div class="mt-1 p-2 bg-white/70 backdrop-blur-sm rounded-md shadow">
-                                <p class="text-xs text-neutral-500 mt-1">
-                                    Allergener: Gluten, Laktos, Mjölk, Soja.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-            <div class="px-6 py-10 bg-slate-50">
-                <h2 class="text-neutral-800 text-3xl font-bold leading-tight tracking-[-0.015em] mb-6 text-center">
-                    Hitta hit</h2>
-
-                <iframe class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl object-cover shadow-lg"
-                    src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d643.0512832386984!2d18.963426100591736!3d63.21977374269231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d63.21979761546151!2d18.963889343185443!5e1!3m2!1ssv!2sse!4v1750757751655!5m2!1ssv!2sse"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                <div class="mt-6 text-center">
-                    <p class="text-neutral-700 text-lg font-medium">Stubbsand 338, Arnesvall,
-                        891 96</p>
-                    <p class="text-neutral-500 text-sm">Öppet dygnet runt för dina
-                        glassbegär!</p>
-                </div>
-            </div>
-
-            <footer class="bg-neutral-800 text-green-800">
-                <div class="container mx-auto px-5 py-10">
-
-
-                    <div class="flex flex-col justify-between items-center  text-center  gap-8 mb-8 max-w-3xl mx-auto">
-
-
-                        <div class="flex flex-col items-center ">
-                            <!-- Logotyp -->
-                            <div class="mb-2">
-                                <img src="Image/Logg-ISBOXEN.PNG" alt="Isboxen Logo" class="h-12 w-auto" />
-                            </div>
-                            <!-- Tagline -->
-                            <p class="text-sm text-green-700 max-w-xs">
-                                Frågor, önskemål eller företagssamarbeten? Jag lyssnar gärna!
-                            </p>
-                        </div>
-
-
-                        <div class="flex flex-col items-center  gap-1">
-                            <p class="text-sm text-slate-400 font-semibold">Kontakta Hugo Kjellsson:</p>
-                            <a href="mailto:hugo@kjellsson.nu"
-                                class="text-sm text-amber-500 hover:text-amber-600 hover:underline">
-                                hugo@kjellsson.nu
-                            </a>
-                            <a href="tel:0703909051"
-                                class="text-sm text-amber-500 hover:text-amber-600 hover:underline">
-                                070-390 90 51
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Avdelare och Copyright -->
-                    <div class="border-t border-green-900 opacity-50 pt-6 text-center">
-                        <p class="text-green-700 text-xs font-normal leading-normal">
-                            © 2025 Isboxen. Alla rättigheter förbehållna.
-                        </p>
-                    </div>
-
-                </div>
-            </footer>
+          </div>
         </div>
-    </div>
-</body>
+        <div class="bg-green-50 py-10 px-6">
+          <h2
+            class="text-neutral-800 text-3xl font-subheading leading-tight tracking-[-0.015em] mb-8 text-center"
+          >
+            Så Fungerar Det
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+            <div
+              class="flex flex-col items-center gap-3 rounded-xl p-6 shadow-md bg-gradient-to-br from-rose-100 to-rose-300"
+            >
+              <div class="text-rose-600">
+                <svg
+                  fill="currentColor"
+                  height="40px"
+                  viewBox="0 0 256 256"
+                  width="40px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M208,89.37V88A80,80,0,0,0,48,88v1.37A24,24,0,0,0,56,136h3.36l61.69,108a8,8,0,0,0,13.9,0l61.69-108H200a24,24,0,0,0,8-46.63ZM128,223.88,77.79,136H97.07l40.57,71ZM134.79,136l21.71,38-9.64,16.88L115.5,136Zm30.92,21.88L153.21,136h25ZM200,120H56a8,8,0,0,1,0-16,8,8,0,0,0,8-8V88a64,64,0,0,1,128,0v8a8,8,0,0,0,8,8,8,8,0,0,1,0,16Z"
+                  ></path>
+                </svg>
+              </div>
+              <h3
+                class="text-xl font-semibold leading-tight bg-gradient-to-r from-neutral-600 to-neutral-700 bg-clip-text text-transparent"
+              >
+                Välj Din Smak
+              </h3>
+              <p class="text-neutral-500 text-sm">
+                Välj din favorit från vårt läckra urval.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center gap-3 rounded-xl p-6 shadow-md bg-gradient-to-br from-amber-100 to-amber-300"
+            >
+              <div class="text-amber-600">
+                <svg
+                  fill="currentColor"
+                  height="40px"
+                  viewBox="0 0 256 256"
+                  width="40px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM32,64H224V80H32ZM224,192H32V160H224v32Zm0-48H32V112H224v32Z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-neutral-700 text-xl font-semibold leading-tight">
+                Enkel Betalning
+              </h3>
+              <p class="text-neutral-500 text-sm">
+                Snabb och säker kontaktlös betalning via SWISH.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center gap-3 rounded-xl p-6 shadow-md bg-gradient-to-br from-green-100 to-green-300"
+            >
+              <div class="text-green-600">
+                <svg
+                  fill="currentColor"
+                  height="40px"
+                  viewBox="0 0 256 256"
+                  width="40px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-neutral-700 text-xl font-semibold leading-tight">
+                Ta & Njut!
+              </h3>
+              <p class="text-neutral-500 text-sm">
+                Ta din glass och njut av stunden.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="py-10 px-6 bg-slate-50">
+          <h2
+            class="text-neutral-800 text-3xl font-bold font-subheading leading-tight tracking-[-0.015em] mb-6 text-center"
+          >
+            Utvalda Smaker från Sia Glass
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Produktkort glassbåt klassisk -->
+            <div
+              class="relative rounded-xl shadow-md overflow-hidden bg-slate-200 max-w-xs mx-auto"
+            >
+              <!-- Bakgrundsbild (suddig) -->
+              <div
+                class="absolute inset-0 z-0 bg-center bg-no-repeat bg-cover filter blur-3xl scale-110"
+                style="background-image: url('Image/Klassisk-glassbat.png')"
+              ></div>
 
+              <!-- Innehåll -->
+              <div class="relative z-10 flex flex-col gap-2 p-3">
+                <!-- Produktbild -->
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-full shadow-lg"
+                  style="background-image: url('Image/Klassisk-glassbat.png')"
+                ></div>
+
+                <!-- Huvudinformation -->
+                <div>
+                  <h2 class="text-neutral-700 text-xl font-bold leading-tight">
+                    Glassbåt - Originalet
+                  </h2>
+                  <p class="text-neutral-500 text-xs leading-normal mt-0.5">
+                    Krämig vaniljglass på svensk grädde, jordgubbssylt &
+                    chokladöverdrag i båtrån. Klassiker sedan 1961.
+                  </p>
+                </div>
+
+                <!-- Snabbfakta / Näring per glass -->
+                <div
+                  class="mt-1 p-2 bg-white/70 backdrop-blur-sm rounded-md shadow"
+                >
+                  <p class="text-xs text-neutral-500 mt-1">
+                    Allergener: Gluten, Laktos, Mjölk, Soja.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Produktkort glassbåt hallon -->
+            <div
+              class="relative rounded-xl shadow-md overflow-hidden bg-slate-200 max-w-xs mx-auto"
+            >
+              <!-- Bakgrundsbild (suddig) -->
+              <div
+                class="absolute inset-0 z-0 bg-center bg-no-repeat bg-cover filter blur-3xl scale-110"
+                style="background-image: url('Image/Glassbat-Hallon.png')"
+              ></div>
+
+              <!-- Innehåll -->
+              <div class="relative z-10 flex flex-col gap-2 p-3">
+                <!-- Produktbild (Byt ut "Image/Glassbat-Hallon.png" mot din bildlänk) -->
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-full shadow-lg"
+                  style="background-image: url('Image/Glassbat-Hallon.png')"
+                ></div>
+
+                <!-- Huvudinformation -->
+                <div>
+                  <h2 class="text-neutral-700 text-xl font-bold leading-tight">
+                    Glassbåt Hallon
+                  </h2>
+                  <p class="text-neutral-500 text-xs leading-normal mt-0.5">
+                    Len hallonglass gjord på svensk färsk grädde med frisk
+                    hallonsylt och dopp med vit chokladsmak i båtformat rån.
+                  </p>
+                </div>
+
+                <!-- Snabbfakta / Näring per glass -->
+                <div
+                  class="mt-1 p-2 bg-white/70 backdrop-blur-sm rounded-md shadow"
+                >
+                  <p class="text-xs text-neutral-500 mt-1">
+                    Allergener: Gluten, Laktos, Sojalecitin, Mjölkprotein.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Produktkort glassbåt sommaredition2025 -->
+          </div>
+        </div>
+
+        <section id="map-section">
+          <div class="px-6 py-10 bg-slate-50">
+            <h2
+              class="text-neutral-800 text-3xl font-bold font-subheading leading-tight tracking-[-0.015em] mb-6 text-center"
+            >
+              Hitta hit
+            </h2>
+
+            <iframe
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl object-cover shadow-lg"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1584.6770069385132!2d18.961407676876114!3d63.21987749376306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x467cafd5ce34a335%3A0x46d3e073df454ae1!2sISBOXEN!5e1!3m2!1ssv!2sse!4v1752402802394!5m2!1ssv!2sse"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <div class="mt-6 text-center">
+              <p class="text-neutral-700 text-lg font-medium">
+                Stubbsand 338, Arnesvall, 891 96
+              </p>
+              <p class="text-neutral-500 text-sm">
+                Öppet dygnet runt för dina glassbegär!
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <footer class="bg-neutral-800 text-green-800">
+          <div class="container mx-auto px-5 py-10">
+            <div
+              class="flex flex-col justify-between items-center text-center gap-8 mb-8 max-w-3xl mx-auto"
+            >
+              <div class="flex flex-col items-center">
+                <!-- Logotyp -->
+                <div class="mb-2">
+                  <img
+                    src="Image/Logg-ISBOXEN.PNG"
+                    alt="Isboxen Logo"
+                    class="h-12 w-auto"
+                  />
+                </div>
+                <!-- Tagline -->
+                <p class="text-sm text-green-700 max-w-xs">
+                  Frågor, önskemål eller företagssamarbeten? Jag lyssnar gärna!
+                </p>
+              </div>
+
+              <div class="flex flex-col items-center gap-1">
+                <p class="text-sm text-slate-400 font-semibold">
+                  Kontakta Hugo Kjellsson:
+                </p>
+                <a
+                  href="mailto:hugo@kjellsson.nu"
+                  class="text-sm text-amber-500 hover:text-amber-600 hover:underline"
+                >
+                  hugo@kjellsson.nu
+                </a>
+                <a
+                  href="tel:0703909051"
+                  class="text-sm text-amber-500 hover:text-amber-600 hover:underline"
+                >
+                  070-390 90 51
+                </a>
+              </div>
+            </div>
+
+            <!-- Avdelare och Copyright -->
+            <div class="border-t border-green-900 opacity-50 pt-6 text-center">
+              <p class="text-green-700 text-xs font-normal leading-normal">
+                © 2025 Isboxen. Alla rättigheter förbehållna.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
