@@ -1,87 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="src/output.css" rel="stylesheet" />
-    <title>404 - Sidan Hittades Inte | Isboxen</title>
+
+    <title>404 – Sidan hittades inte | Isboxen</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#FBF7EC" />
+
+    <!-- OBS: absoluta sökvägar! GitHub Pages visar 404-sidan på vilken
+         adress som helst (t.ex. /01-Website-Isboxen/fel/sida), så
+         relativa sökvägar skulle peka fel. -->
+    <link href="/01-Website-Isboxen/src/output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="/01-Website-Isboxen/Image/Logg-ISBOXEN - favicon.PNG"
+      type="image/png"
+    />
   </head>
 
-  <body class="bg-slate-50">
-    <div
-      class="relative flex w-full h-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden font-sans"
-    >
-      <div class="flex-grow">
-        <div
-          class="flex flex-col items-center justify-center min-h-[calc(100vh-250px)] sm:min-h-[calc(100vh-200px)] p-6 bg-gradient-to-b from-yellow-50 to-yellow-100 text-center"
+  <body class="bg-cream font-sans text-choc antialiased overflow-x-hidden">
+    <!-- Smältande kant – samma avdelare som på startsidan -->
+    <svg class="hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="drip" viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path
+          d="M0 22 L25 22 C55.25 22 52.5 58 80 58 C107.5 58 104.75 22 135 22 L165 22 C187 22 185 38 205 38 C225 38 223 22 245 22 L280 22 C313 22 310 66 340 66 C370 66 367 22 400 22 L428 22 C451.1 22 449 44 470 44 C491 44 488.9 22 512 22 L545 22 C575.25 22 572.5 56 600 56 C627.5 56 624.75 22 655 22 L682 22 C702.9 22 701 36 720 36 C739 36 737.1 22 758 22 L798 22 C832.1 22 829 68 860 68 C891 68 887.9 22 922 22 L946 22 C970.2 22 968 46 990 46 C1012 46 1009.8 22 1034 22 L1060 22 C1090.25 22 1087.5 60 1115 60 C1142.5 60 1139.75 22 1170 22 L1195 22 C1217 22 1215 40 1235 40 C1255 40 1253 22 1275 22 L1315 22 C1345.25 22 1342.5 54 1370 54 C1397.5 54 1394.75 22 1425 22 L1440 22 L1440 0 L0 0 Z"
+          fill="currentColor"
+        />
+      </symbol>
+    </svg>
+
+    <div class="flex min-h-screen flex-col">
+      <main
+        class="relative flex flex-1 flex-col items-center justify-center overflow-hidden px-6 py-16 text-center"
+      >
+        <!-- Strössel -->
+        <span class="sprinkle bg-berry" style="left: 9%; top: 18%; --tilt: -24deg"></span>
+        <span class="sprinkle bg-blueberry" style="left: 16%; top: 70%; --tilt: 38deg; animation-delay: -1.2s"></span>
+        <span class="sprinkle bg-mango hidden sm:block" style="left: 28%; top: 36%; --tilt: 12deg; animation-delay: -2.4s"></span>
+        <span class="sprinkle bg-grape" style="right: 10%; top: 22%; --tilt: -40deg; animation-delay: -0.8s"></span>
+        <span class="sprinkle bg-mint" style="right: 18%; top: 64%; --tilt: 24deg; animation-delay: -1.8s"></span>
+        <span class="sprinkle bg-frost hidden sm:block" style="right: 30%; top: 40%; --tilt: 50deg; animation-delay: -3s"></span>
+
+        <img
+          src="/01-Website-Isboxen/Image/isboxen-strut.webp"
+          alt=""
+          width="472"
+          height="1201"
+          decoding="async"
+          class="tilt-r h-44 w-auto sm:h-56"
+        />
+
+        <h1 class="font-subheading mt-6 text-7xl text-berry sm:text-8xl">404</h1>
+
+        <h2 class="font-subheading mt-3 text-2xl sm:text-3xl">
+          Hoppsan! Sidan smälte visst bort.
+        </h2>
+        <p class="mx-auto mt-4 max-w-md text-base text-choc/75 sm:text-lg">
+          Sidan du letade efter kunde inte hittas. Kanske tog den en glasspaus?
+          Prova att gå tillbaka till startsidan.
+        </p>
+
+        <a
+          href="/01-Website-Isboxen/"
+          class="btn-pop mt-9 bg-berry text-base text-white sm:text-lg"
         >
+          Till startsidan
+        </a>
+      </main>
+
+      <!-- ============ SIDFOT ============ -->
+      <footer class="bg-grape-deep text-cream">
+        <div class="-mt-px text-cream" aria-hidden="true">
+          <svg class="block h-10 w-full sm:h-14"><use href="#drip" /></svg>
+        </div>
+
+        <div class="mx-auto max-w-3xl px-6 py-10 text-center">
           <img
-            src="Image/Loggo-ISBOXEN.PNG"
-            alt="Isboxen Logo"
-            class="mx-auto w-auto max-h-60 mb-8"
+            src="/01-Website-Isboxen/Image/isboxen-logotyp.webp"
+            alt="Isboxen"
+            width="1400"
+            height="641"
+            loading="lazy"
+            decoding="async"
+            class="mx-auto h-14 w-auto"
           />
 
-          <h1 class="text-6xl sm:text-8xl font-bold text-rose-500 mb-4">404</h1>
-
-          <h2 class="text-slate-800 text-2xl font-subheading sm:text-3xl mb-4">
-            Hoppsan! Sidan smälte visst bort.
-          </h2>
-          <p class="text-neutral-600 text-base sm:text-lg mb-8 max-w-md">
-            Sidan du letade efter kunde inte hittas. Kanske tog den en
-            glasspaus? Prova att gå tillbaka till startsidan.
-          </p>
-          <a
-            href="/"
-            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 sm:h-14 sm:px-8 bg-rose-500 text-white text-base font-bold leading-normal tracking-[0.015em] sm:text-lg sm:font-bold sm:leading-normal sm:tracking-[0.015em] shadow-lg hover:bg-rose-400 transition-colors duration-300"
-          >
-            <span class="truncate">Till Startsidan</span>
-          </a>
-        </div>
-      </div>
-
-      <footer class="bg-neutral-800 text-green-800">
-        <div class="container mx-auto px-5 py-10">
-          <div
-            class="flex flex-col justify-between items-center text-center gap-8 mb-8 max-w-3xl mx-auto"
-          >
-            <div class="flex flex-col items-center">
-              <!-- Logotyp -->
-              <div class="mb-2">
-                <img
-                  src="Image/Loggo-ISBOXEN_optimized_.webp"
-                  alt="Isboxen Logo"
-                  class="h-12 w-auto"
-                />
-              </div>
-              <!-- Tagline -->
-              <p class="text-sm text-green-700 max-w-xs">
-                Frågor, önskemål eller företagssamarbeten? Jag lyssnar gärna!
-              </p>
-            </div>
-
-            <div class="flex flex-col items-center gap-1">
-              <p class="text-sm text-slate-400 font-semibold">
-                Kontakta Hugo Kjellsson:
-              </p>
+          <div class="mt-6">
+            <p class="text-sm font-bold">Kontakta Hugo Kjellsson</p>
+            <div class="mt-2 flex flex-col items-center gap-1">
               <a
                 href="mailto:hugo@kjellsson.nu"
-                class="text-sm text-amber-500 hover:text-amber-600 hover:underline"
+                class="text-sm font-bold text-mango hover:underline"
               >
                 hugo@kjellsson.nu
               </a>
               <a
-                href="tel:0703909051"
-                class="text-sm text-amber-500 hover:text-amber-600 hover:underline"
+                href="tel:+46703909051"
+                class="text-sm font-bold text-mango hover:underline"
               >
                 070-390 90 51
               </a>
             </div>
           </div>
 
-          <!-- Avdelare och Copyright -->
-          <div class="border-t border-green-900 opacity-50 pt-6 text-center">
-            <p class="text-green-700 text-xs font-normal leading-normal">
-              © 2025 Isboxen. Alla rättigheter förbehållna.
+          <div class="mt-8 border-t border-cream/15 pt-5">
+            <p class="text-xs text-cream/60">
+              © 2025–2026 Isboxen. Alla rättigheter förbehållna.
             </p>
           </div>
         </div>

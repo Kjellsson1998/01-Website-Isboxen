@@ -1,14 +1,153 @@
 @import "tailwindcss";
 
-@font-face {
-    font-family: 'Wedges';
-    src: url('/Fonts/Wedges.woff2') format('woff2');
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap; }
+/* ============================================================
+   ISBOXEN – designsystem
+   Färgerna är plockade direkt ur logotypen:
+   bokstäverna (berry, cherry, mango, blueberry, mint, frost),
+   glasskulan (grape) och våffelstrutens kontur (choc).
+   ============================================================ */
 
-        .font-subheading {
-            font-family: 'Wedges', sans-serif;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;     }
+@theme {
+  /* Grundytor */
+  --color-cream: #FBF7EC;        /* sidbakgrund – samma gräddvita som klistermärket */
+  --color-cream-deep: #F4EDDC;
+  --color-lavender: #F1EAFB;     /* sektion: Så funkar det */
+  --color-seafoam: #E9F6EE;      /* sektion: Hitta hit */
+
+  /* Konturer & text – varm mörk choklad */
+  --color-choc: #4A3326;
+
+  /* Godisfärger ur logotypen */
+  --color-berry: #EE4E9B;        /* rosa S */
+  --color-cherry: #EF5B4F;       /* röd B */
+  --color-mango: #F2A14E;        /* orange I + strut */
+  --color-blueberry: #4D6BE8;    /* blå X */
+  --color-mint: #3FC871;         /* grön E */
+  --color-frost: #38D6D6;        /* turkos N */
+  --color-grape: #9B6BE0;        /* lila glasskula */
+  --color-grape-deep: #3B2364;   /* mörk aubergine – sidfot */
+
+  /* Pastellbakgrunder till produktbilderna */
+  --color-berry-mist: #FCE4F0;
+  --color-mango-mist: #FCEDD8;
+  --color-grape-mist: #EFE5FB;
+  --color-blueberry-mist: #E4EBFC;
+  --color-mint-mist: #E2F5EA;
+  --color-frost-mist: #DFF6F6;
+
+  /* Typografi */
+  --font-display: "Wedges", "Arial Rounded MT Bold", "Arial Black", sans-serif;
+  --font-sans: "Nunito", ui-rounded, "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  /* Hårda "klistermärkesskuggor" i choklad */
+  --shadow-sticker: 0.45rem 0.45rem 0 0 #4A3326;
+  --shadow-sticker-sm: 0.28rem 0.28rem 0 0 #4A3326;
+  --shadow-sticker-lg: 0.6rem 0.6rem 0 0 #4A3326;
+}
+
+/* Wedges – egenhostad rubrikfont.
+   OBS: sökvägen är relativ till var output.css ligger (src/),
+   därför ../Fonts/. Den gamla /Fonts/... fungerar inte på
+   GitHub Pages-projektsidor och ligger kvar som reserv. */
+@font-face {
+  font-family: "Wedges";
+  src:
+    url("../Fonts/Wedges.woff2") format("woff2"),
+    url("/Fonts/Wedges.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--color-grape);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 3px dashed var(--color-grape);
+  outline-offset: 4px;
+}
+
+/* Rubrikstil – samma klassnamn som tidigare så att gamla sidor funkar */
+.font-subheading {
+  font-family: var(--font-display);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ------------------------------------------------------------
+   Klistermärke: vitt kort med tjock chokladkontur + hård skugga
+   ------------------------------------------------------------ */
+.sticker {
+  background: #fff;
+  border: 3px solid var(--color-choc);
+  border-radius: 1.75rem;
+  box-shadow: var(--shadow-sticker);
+}
+
+.sticker-lift {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.sticker-lift:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--shadow-sticker-lg);
+}
+
+/* Knapp med "tryckkänsla" */
+.btn-pop {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  border: 3px solid var(--color-choc);
+  border-radius: 9999px;
+  padding: 0.8rem 1.7rem;
+  box-shadow: var(--shadow-sticker-sm);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-pop:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 0.4rem 0.4rem 0 0 var(--color-choc);
+}
+.btn-pop:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0.1rem 0.1rem 0 0 var(--color-choc);
+}
+
+/* Lätt lutning, som slarvigt fastklistrade märken */
+.tilt-l { rotate: -1.7deg; }
+.tilt-r { rotate: 1.4deg; }
+
+/* Strössel i hjälteytan */
+.sprinkle {
+  position: absolute;
+  width: 1.1rem;
+  height: 0.38rem;
+  border-radius: 9999px;
+  opacity: 0.9;
+  pointer-events: none;
+  transform: rotate(var(--tilt, 20deg));
+  animation: bob 5.5s ease-in-out infinite alternate;
+}
+
+@keyframes bob {
+  from { transform: translateY(0) rotate(var(--tilt, 20deg)); }
+  to   { transform: translateY(-10px) rotate(calc(var(--tilt, 20deg) + 14deg)); }
+}
+
+/* Respektera den som vill slippa rörelse */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .sprinkle { animation: none; }
+  .btn-pop, .sticker-lift { transition: none; }
+}
