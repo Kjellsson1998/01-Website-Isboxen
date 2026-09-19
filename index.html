@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Isboxen – Självplock av SIA Glass i Stubbsand, Arnäsvall</title>
+    <title>Isboxen – Stängt för säsongen, öppnar igen sommaren 2027</title>
     <meta
       name="description"
-      content="Sugen på glass? Isboxen i Stubbsand erbjuder självplock av SIA Glass dygnet runt, året om. Välj din favorit ur glassboxen, betala med Swish och njut!"
+      content="Isboxen i Stubbsand är stängd för säsongen. Glassboxen med självplock av SIA Glass öppnar igen till sommaren 2027 – välkommen tillbaka då!"
     />
     <meta
       name="keywords"
@@ -21,10 +21,13 @@
     <!-- Delningskort (Facebook, Messenger, m.m.) -->
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="sv_SE" />
-    <meta property="og:title" content="Isboxen – Ta &amp; gå-glass i Stubbsand" />
+    <meta
+      property="og:title"
+      content="Isboxen – stängt för säsongen, öppnar sommaren 2027"
+    />
     <meta
       property="og:description"
-      content="Självplock av SIA Glass, öppet dygnet runt. Välj din favorit, betala med Swish och njut!"
+      content="Glassboxen vilar över vintern. Vi öppnar igen till sommaren 2027 – då är det självplock av SIA Glass som vanligt!"
     />
     <meta
       property="og:url"
@@ -77,21 +80,14 @@
         },
         "url": "https://kjellsson1998.github.io/01-Website-Isboxen/",
         "paymentAccepted": "Swish",
-        "openingHoursSpecification": {
+        "specialOpeningHoursSpecification": {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
-          ],
           "opens": "00:00",
-          "closes": "23:59"
+          "closes": "00:00",
+          "validFrom": "2026-09-19",
+          "validThrough": "2027-06-01"
         },
-        "description": "Isboxen erbjuder enkel och snabb självplock av SIA Glass i Stubbsand, Arnäsvall – öppet dygnet runt. Betala smidigt med Swish."
+        "description": "Isboxen i Stubbsand, Arnäsvall är stängd för säsongen och öppnar igen till sommaren 2027. Då är det självplock av SIA Glass dygnet runt med betalning via Swish."
       }
     </script>
   </head>
@@ -144,10 +140,32 @@
           Lika enkelt som det låter.
         </p>
 
+        <!-- ============ SÄSONGSMEDDELANDE ============
+             Isboxen är stängd över vintern. Så här öppnar du sidan igen:
+               1. Ta bort hela det här <div>-blocket.
+               2. Byt tillbaka pillret nedan till "Öppet dygnet runt"
+                  (och pricken till bg-mango).
+               3. Byt tillbaka texten under "Hitta hit".
+               4. Byt tillbaka titel, beskrivningar och
+                  specialOpeningHoursSpecification i <head>.
+             Nytt årtal nästa gång? Sök på "2027" i den här filen. -->
+        <div
+          class="tilt-r mx-auto mt-8 max-w-lg rounded-[1.75rem] border-[3px] border-choc bg-berry-mist p-5 shadow-sticker sm:p-6"
+          role="status"
+        >
+          <p class="font-subheading text-xl text-berry sm:text-2xl">
+            Stängt för säsongen
+          </p>
+          <p class="mt-3 text-sm text-choc/80 sm:text-base">
+            Glassboxen är tömd och vilar över vintern. Vi öppnar igen till
+            sommaren 2027 – välkommen tillbaka då!
+          </p>
+        </div>
+
         <ul class="mt-7 flex flex-wrap items-center justify-center gap-3">
           <li class="tilt-l inline-flex items-center gap-2 rounded-full border-[3px] border-choc bg-white px-4 py-1.5 text-sm font-bold shadow-sticker-sm">
-            <span class="h-2.5 w-2.5 rounded-full bg-mango" aria-hidden="true"></span>
-            Öppet dygnet runt
+            <span class="h-2.5 w-2.5 rounded-full bg-cherry" aria-hidden="true"></span>
+            Öppnar sommaren 2027
           </li>
           <li class="inline-flex items-center gap-2 rounded-full border-[3px] border-choc bg-white px-4 py-1.5 text-sm font-bold shadow-sticker-sm">
             <span class="h-2.5 w-2.5 rounded-full bg-blueberry" aria-hidden="true"></span>
@@ -242,8 +260,8 @@
             Utvalda smaker från SIA Glass
           </h2>
           <p class="mx-auto mt-4 max-w-xl text-center text-choc/75">
-            Ett axplock ur frysen – hela utbudet och aktuella priser ser du på
-            plats.
+            Ett axplock ur frysen inför nästa säsong – hela utbudet och
+            aktuella priser ser du på plats när vi öppnar igen.
           </p>
 
           <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -469,7 +487,7 @@
             Stubbsand 338, 891 96 Arnäsvall
           </p>
           <p class="mt-1 text-choc/75">
-            Öppet dygnet runt, året om – för dina glassbegär!
+            Stängt för säsongen – vi öppnar igen till sommaren 2027.
           </p>
 
           <a
